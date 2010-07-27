@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Gallery.Persistence"
+                   namespace="Gallery.Persistence.Domain">
+
+  <class name="Account" >
+    <id name="Id">
+      <!--<GENERATOR class="assigned" />-->
+    </id>
+    <!--<property name="Id" />-->
+    <property name="Wasp" />
+    <property name="Company" />
+    <property name="Contact" />
+    <property name="Email" />
+  </class>
+
+</hibernate-mapping>
+

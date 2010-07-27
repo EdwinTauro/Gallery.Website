@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Style Enforcer", "Code Style Enforcer", "{4EC454D5-78BF-4404-B8E1-40C03EACBD66}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Program Files\Code Style Enforcer\CustomRules\ImplementationRules.xml = C:\Program Files\Code Style Enforcer\CustomRules\ImplementationRules.xml
+		C:\Program Files\Code Style Enforcer\CustomRules\NameRules.xml = C:\Program Files\Code Style Enforcer\CustomRules\NameRules.xml
+		C:\Program Files\Code Style Enforcer\CustomRules\VisibilityRules.xml = C:\Program Files\Code Style Enforcer\CustomRules\VisibilityRules.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gallery.Persistence", "Gallery.Persistence\Gallery.Persistence.csproj", "{2FF25CBE-E774-4889-B150-4797BC30C7B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gallery.Persistence.Tests", "Gallery.Persistence.Tests\Gallery.Persistence.Tests.csproj", "{7ED60FE4-8558-426A-BA79-4E4920D5BC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gallery.Website", "Gallery.Website\Gallery.Website.csproj", "{534FEFDD-26F1-480F-8385-B4CE5A1E79DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FF25CBE-E774-4889-B150-4797BC30C7B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF25CBE-E774-4889-B150-4797BC30C7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF25CBE-E774-4889-B150-4797BC30C7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF25CBE-E774-4889-B150-4797BC30C7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED60FE4-8558-426A-BA79-4E4920D5BC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED60FE4-8558-426A-BA79-4E4920D5BC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED60FE4-8558-426A-BA79-4E4920D5BC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED60FE4-8558-426A-BA79-4E4920D5BC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534FEFDD-26F1-480F-8385-B4CE5A1E79DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534FEFDD-26F1-480F-8385-B4CE5A1E79DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534FEFDD-26F1-480F-8385-B4CE5A1E79DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534FEFDD-26F1-480F-8385-B4CE5A1E79DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		CodeStyleEnforcer_RulesLocation = 0
+		CodeStyleEnforcer_Active = -1
+	EndGlobalSection
+EndGlobal

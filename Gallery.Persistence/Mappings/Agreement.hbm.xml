@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Gallery.Persistence"
+                   namespace="Gallery.Persistence.Domain">
+
+  <class name="Agreement" >
+    <id name="Id">
+      <!--<GENERATOR class="assigned" />-->
+    </id>
+    <!--<property name="Id" />-->
+    <property name="StartDate" />
+    <property name="EndDate" />
+    <property name="ClickLimit" />
+    <property name="Eval" />
+   
+    <one-to-one name="Account"  foreign-key="Id" class="Account" />
+
+  </class>
+
+  <!--<query name="GetLatestAgreementByWasp">
+    from Agreement agr
+    where agr.Account.Wasp like :wasp 
+  </query>-->
+
+
+  <sql-query name="GetLatestAgreementByWasp">
+    <return alias="agr" class="Agreement" />
+    <return-join alias="acc" property="agr.Account" />
+    SELECT agr.ID as {agr.Id},
+            agr.STARTDATE as {agr.StartDate},
+            agr.ENDDATE as {agr.EndDate},
+            acc.ID as {acc.Id},
+            acc.WASP as {acc.Wasp}
+    FROM AGREEMENT agr
+    JOIN ACCOUNT acc
+    ON AGREEMENT.ACCOUNT = ACCOUNT.ID
+    where acc.Wasp like :wasp
+  </sql-query>
+  
+</hibernate-mapping>

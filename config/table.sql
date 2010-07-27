@@ -1,0 +1,8 @@
+DROP TABLE member;
+
+CREATE TABLE member (
+id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+username VARCHAR(25),
+password VARCHAR(20),
+email VARCHAR(50)
+);
